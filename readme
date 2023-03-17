@@ -3,12 +3,12 @@ Assignment 4 readme File
 ------------------------------------------------------------------------
 Student 1: What is your name?
 
-
+Arnold Jiang
 
 ------------------------------------------------------------------------
 Student 2: What is your name?
 
-
+Evan Lin
 
 ------------------------------------------------------------------------
 Student 1: What authorized sources of information did you use to
@@ -17,7 +17,30 @@ information given in the "Policies" web page (also available on armlab
 in the file ~cos217/AuthorizedSourcesList ) to this section of the
 readme file, and edit it as appropriate.
 
+The course's lectures: 1 - 10
 
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website. Such documents include the course's lecture slides and precept handouts.
+
+The course's textbooks.
+
+The man pages on the armlab cluster.
+
+The course's current staff members outside of class time through office hours.
+
+Donna's office hours
+
+The course's current staff members outside of class time through meetings.
+Donna Gabai's unofficial office hours between precepts on Mondays/Wednesdays
+
+The course's current staff members outside of class time through Ed.
+
+The course's current staff members outside of class time through e-mail.
+
+Current Intro Lab TAs through visits to the Intro COS Lab.
 
 ------------------------------------------------------------------------
 Student 2: What authorized sources of information did you use to
@@ -40,7 +63,7 @@ nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
 
-
+None
 
 ------------------------------------------------------------------------
 Student 2: What unauthorized sources of information did you use to
@@ -117,7 +140,7 @@ the error manifests itself or is "noticed" by the client.
 
       Executable         Function with the underlying error
 ===============================================================
-         ./bdtBad1        
+         ./bdtBad1        int BDT_insert(const char *pcPath);
 ---------------------------------------------------------------
          ./bdtBad2        
 ---------------------------------------------------------------
