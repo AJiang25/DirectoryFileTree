@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------*/
 /* checkerDT.c                                                        */
-/* Author:                                                            */
+/* Author: Arnold Jiang and Evan Lin                                                          */
 /*--------------------------------------------------------------------*/
 
 #include <assert.h>
@@ -9,8 +9,6 @@
 #include "checkerDT.h"
 #include "dynarray.h"
 #include "path.h"
-
-
 
 /* see checkerDT.h for specification */
 boolean CheckerDT_Node_isValid(Node_T oNNode) {
@@ -21,6 +19,13 @@ boolean CheckerDT_Node_isValid(Node_T oNNode) {
    /* Sample check: a NULL pointer is not a valid node */
    if(oNNode == NULL) {
       fprintf(stderr, "A node is a NULL pointer\n");
+      return FALSE;
+   }
+
+/* check on 2?*/
+   if(DT_contains(Node_getPath(oNNode))) {
+      fprintf(stderr, "Node is already in the tree: (%s)\n",
+              Path_getPathname(Node_getPath(oNNode)));
       return FALSE;
    }
 
@@ -93,6 +98,11 @@ boolean CheckerDT_isValid(boolean bIsInitialized, Node_T oNRoot,
          return FALSE;
       }
 
+   /* Sample Check... */
+   
+
+
    /* Now checks invariants recursively at each node from the root. */
    return CheckerDT_treeCheck(oNRoot);
 }
+
